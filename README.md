@@ -13,41 +13,6 @@ Automatically completes Discord quests by simulating watch time and activity pro
 - ✅ Statistics tracking with persistent storage
 - ✅ Pause/Resume functionality
 
-## 🛡️ Safety Features
-
-This script includes several safety measures to reduce detection risk:
-
-| Feature | Description |
-|---------|-------------|
-| **Randomized Timing** | Progress speed varies between 5-12 seconds (not constant) |
-| **API Jitter** | Random delays (100-500ms) added to API calls |
-| **Random Breaks** | 5% chance of short breaks (10-45s) during processing |
-| **Cooldown Between Quests** | 30-90 second delay between quests |
-| **Session Limits** | Optional max quests per session |
-| **Initial Delay** | 3-8 second delay before starting |
-| **Humanized Progress** | Slight randomness in progress reporting |
-
-### Safety Configuration
-
-You can adjust safety settings in `CONFIG.safety`:
-
-```javascript
-CONFIG.safety = {
-    maxQuestsPerSession: 3,        // Limit quests per session (0 = unlimited)
-    cooldownBetweenQuests: {
-        min: 60000,                // 1 minute minimum
-        max: 180000,               // 3 minutes maximum
-    },
-    maxSessionDuration: 3600000,   // 1 hour max (0 = unlimited)
-    randomBreaks: {
-        enabled: true,
-        chance: 0.1,               // 10% chance
-        minDuration: 15000,        // 15 seconds
-        maxDuration: 60000,        // 1 minute
-    },
-};
-```
-
 ## Supported Quest Types
 
 | Quest Type | Browser | Desktop App |
