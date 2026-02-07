@@ -31,8 +31,6 @@ Automatically completes Discord quests by simulating watch time and activity pro
 4. Copy and paste the contents of `quest-completer.js`
 5. Press **Enter** to run
 
-The dashboard will appear in the top-right corner with a **🛡️ SAFE MODE ACTIVE** indicator.
-
 ## Commands
 
 ```javascript
